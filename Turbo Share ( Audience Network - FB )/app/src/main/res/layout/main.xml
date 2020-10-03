@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="160dp"-->
+<!--            android:background="@color/colorPrimary">-->
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView"-->
+<!--                android:layout_width="280dp"-->
+<!--                android:layout_height="130dp"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:scaleType="fitXY"-->
+<!--                app:srcCompat="@drawable/ic_sharing_img" />-->
+<!--&lt;!&ndash;            app:srcCompat="@mipmap/ic_launcher"&ndash;&gt;-->
+<!--        </RelativeLayout>-->
+
+        <LinearLayout
+            android:id="@+id/banner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/mainbgbutton"
+            android:orientation="horizontal"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:weightSum="4">
+
+
+            <RelativeLayout
+                android:id="@+id/send1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/img_file"
+                    android:gravity="center"
+                    app:srcCompat="@drawable/ic_file"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="File"
+                    android:layout_below="@+id/img_file"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="14sp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/localButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="Local"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+            <View
+                android:id="@+id/verticalSeperator"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                />
+            <RelativeLayout
+                android:id="@+id/send2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:id="@+id/apk_img"
+                    app:srcCompat="@drawable/ic_android" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="App"
+                    android:layout_below="@+id/apk_img"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="14sp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/sendLayoutButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="Send"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+            <View
+                android:id="@+id/verticalSeperator1"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                />
+            <RelativeLayout
+                android:id="@+id/send3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/music_img"
+                    android:gravity="center"
+                    app:srcCompat="@drawable/ic_music" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Music"
+                    android:layout_below="@+id/music_img"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="14sp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/receiveLayoutButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="Receive"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+            <View
+                android:id="@+id/verticalSeperator2"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                />
+            <RelativeLayout
+                android:id="@+id/send4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:id="@+id/video_img"
+                    app:srcCompat="@drawable/ic_video" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Video"
+                    android:layout_below="@+id/video_img"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="14sp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/shareButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="Share"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView"-->
+<!--            android:layout_width="280dp"-->
+<!--            android:layout_height="130dp"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:scaleType="fitXY"-->
+<!--            android:layout_gravity="center"-->
+<!--            app:srcCompat="@drawable/ic_sharing_img" />-->
+
+                    <FrameLayout
+                        android:id="@+id/fragmentContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#fff" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
